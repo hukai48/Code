@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>LoveOfChuan</title>
+		<link rel="stylesheet" href="css/hovertree.css" />
+	</head>
+	<body>
+		<div class="hovertreeinfo">
+			<h2></h2>
+		</div>
+		<!-- ���Զ��������� -->
+		
+		<audio autoplay="autoplay" loop=""  type="audio/mp3"><source src="img/Spontania.mp3" ></audio>
+		<script type="text/javascript">
+		//--����ҳ��������ȴ�΢�Ŷ�ҳ�������� ������Ƶ����
+		//--	<audio loop src="img/Spontania.mp3" id="audio" autoplay preload="auto">���������֧��audio����</audio>*/
+		document.addEventListener('DOMContentLoaded', function () {
+			function audioAutoPlay() {
+				var audio = document.getElementById('audio');
+					audio.play();
+				document.addEventListener("WeixinJSBridgeReady", function () {
+					audio.play();
+				}, false);
+			}
+			audioAutoPlay();
+		});
+		//--�����������������������ҳ��ʱ��������Ļ�����¼���������Ƶ����
+		document.addEventListener('touchstart', function () {
+			function audioAutoPlay() {
+				var audio = document.getElementById('audio');
+					audio.play();
+			}
+			audioAutoPlay();
+		});
+		</script>
+
+		<!--/*����������*/-->
+		<div class="wrap">
+			<!--	/*��������Ԫ�ص�����*/-->
+			<div class="cube">
+				<!--ǰ��ͼƬ -->
+				<div class="out_front">
+					<img src="img/01.jpg " class="pic" />
+				</div>
+				<!--����ͼƬ -->
+				<div class="out_back">
+					<img src="img/02.jpg" class="pic"/>
+				</div>
+				<!--��ͼƬ -->
+				<div class="out_left">
+					<img src="img/03.jpg" class="pic" />
+				</div>
+				<div class="out_right">
+					<img src="img/04.jpg" class="pic" />
+				</div>
+				<div class="out_top">
+					<img src="img/05.jpg" class="pic" />
+				</div>
+				<div class="out_bottom">
+					<img src="img/06.jpg" class="pic" />
+				</div>
+				<!--С������ -->
+				<span class="in_front">
+					<img src="img/07.jpg" class="in_pic" />
+				</span>
+				<span class="in_back">
+					<img src="img/08.jpg" class="in_pic" />
+				</span>
+				<span class="in_left">
+					<img src="img/09.jpg" class="in_pic" />
+				</span>
+				<span class="in_right">
+					<img src="img/10.jpg" class="in_pic" />
+				</span>
+				<span class="in_top">
+					<img src="img/11.jpg" class="in_pic" />
+				</span>
+				<span class="in_bottom">
+					<img src="img/12.jpg" class="in_pic" />
+				</span>
+			</div>
+		</div>
+
+	</body>
+</html>
